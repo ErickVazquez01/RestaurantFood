@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--npm run watch-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <nav x-data="{open: false}" class="bg-secondary fixed z-10 w-full text-gray-100">
+        <div class="px-2 py-3 bg-secondary text-gray-100 flex w-full mx-auto justify-between items-center">
+            <div>
+                <img class="h-8 "
+                    src="https://raw.githubusercontent.com/victoryoalli/platzifood/76946dc197de9980017a831db70f42577fce5991/public/images/logo-w.svg">
+            </div>
+            <button class="text-2xl" @click="open= true" >
+                &equiv;
+            </button>
+            
+        </div>
+        <div x-show="open" @click.away="open = false" >
+            <div class="mx-2 md:flex items-center flex-row-reverse">
+                <div class="">
+                    <input class="form-label " type="search" placeholder="Busqueda">
+                </div>
+                <div class="mx-2">
+                    <div class="flex gap-1 text-white">Calificación:
+                        <div class="text-yellow-300">&starf;</div>
+                        <div class="text-yellow-300">&starf;</div>
+                        <div>&starf;</div>
+                        <div>&starf;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+    <main class="">
+        <div class="h-56 md:h-100 bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80');">
+        </div>
+
+        <div class="container mx-auto md:flex">
+            <div class="mx-2 md:mx-0 md:w-1/2 mt-4 rounded-lg md:flex md:bg-white md:shadow-lg md:items-center">
+                <div class="w-auto md:w-1/2 md:h-full ">
+                    <img class="w-full h-full object-cover object-left rounded-lg md:rounded-r-none"
+                        src="https://images.unsplash.com/photo-1565060299509-453c4f3bc905?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="">
+                </div>
+                <div
+                    class="relative mx-0  h-full p-2 shadow-lg bg-white rounded-lg -mt-2  md:mt-0 md:bg-transparent md:shadow-none">
+                    <h2 class="pt-4 text-xl tracking-tight font-semibold uppercase text-gray-900 md:text-xl">hamburguesa
+                        con
+                        queso</h2>
+                    <div class="pt-4 text-gray-700 leading-snug">Hamburguesa con queso y aderezo de chipotle</div>
+                    <div class="mt-4 text-sm font-semibold text-gray-700">MXN $15.00</div>
+                    <div class="mt-5 text-xs text-yellow-700">&starf;&starf;&starf;&starf;&starf; 36 reseñas</div>
+                </div>
+            </div>
+            <div class="mx-2 md:mx-0 md:w-1/2 mt-4 rounded-lg md:flex md:bg-white md:shadow-lg md:items-center">
+                <div class="w-auto md:w-1/2 md:h-full ">
+                    <img class="w-full h-full object-cover object-left rounded-lg md:rounded-r-none"
+                        src="https://images.unsplash.com/photo-1565060299509-453c4f3bc905?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="">
+                </div>
+                <div
+                    class="relative mx-0  h-full p-2 shadow-lg bg-white rounded-lg -mt-2  md:mt-0 md:bg-transparent md:shadow-none">
+                    <h2 class="pt-4 text-xl tracking-tight font-semibold uppercase text-gray-900 md:text-xl">hamburguesa
+                        con
+                        queso</h2>
+                    <div class="pt-4 text-gray-700 leading-snug">Hamburguesa con queso y aderezo de chipotle</div>
+                    <div class="mt-4 text-sm font-semibold text-gray-700">MXN $15.00</div>
+                    <div class="mt-5 text-xs text-yellow-700">&starf;&starf;&starf;&starf;&starf; 36 reseñas</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container mx-auto md:flex ">
+            <div class="mx-2 md:mx-0 md:w-1/2 mt-4 rounded-lg md:flex md:bg-white md:shadow-lg md:items-center">
+                <div class="w-auto md:w-1/2 md:h-full ">
+                    <img class="w-full h-full object-cover object-left rounded-lg md:rounded-r-none"
+                        src="https://images.unsplash.com/photo-1565060299509-453c4f3bc905?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="">
+                </div>
+                <div
+                    class="relative mx-0  h-full p-2 shadow-lg bg-white rounded-lg -mt-2  md:mt-0 md:bg-transparent md:shadow-none">
+                    <h2 class="pt-4 text-xl tracking-tight font-semibold uppercase text-gray-900 md:text-xl">hamburguesa
+                        con
+                        queso</h2>
+                    <div class="pt-4 text-gray-700 leading-snug">Hamburguesa con queso y aderezo de chipotle</div>
+                    <div class="mt-4 text-sm font-semibold text-gray-700">MXN $15.00</div>
+                    <div class="mt-5 text-xs text-yellow-700">&starf;&starf;&starf;&starf;&starf; 36 reseñas</div>
+                </div>
+            </div>
+            <div class="mx-2 md:mx-0 md:w-1/2 mt-4 rounded-lg md:flex md:bg-white md:shadow-lg md:items-center">
+                <div class="w-auto md:w-1/2 md:h-full ">
+                    <img class="w-full h-full object-cover object-left rounded-lg md:rounded-r-none"
+                        src="https://images.unsplash.com/photo-1565060299509-453c4f3bc905?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="">
+                </div>
+                <div
+                    class="relative mx-0  h-full p-2 shadow-lg bg-white rounded-lg -mt-2  md:mt-0 md:bg-transparent md:shadow-none">
+                    <h2 class="pt-4 text-xl tracking-tight font-semibold uppercase text-gray-900 md:text-xl">hamburguesa
+                        con
+                        queso</h2>
+                    <div class="pt-4 text-gray-700 leading-snug">Hamburguesa con queso y aderezo de chipotle</div>
+                    <div class="mt-4 text-sm font-semibold text-gray-700">MXN $15.00</div>
+                    <div class="mt-5 text-xs text-yellow-700">&starf;&starf;&starf;&starf;&starf; 36 reseñas</div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="mt-8 mx-auto  w-full md:w-1/2">
+            <div>
+                <div>Nombre</div>
+                <input
+                    class="form-label placeholder-secondary leading-snug hover:bg-white focus:outline-none focus:shadow-outline"
+                    type="text" placeholder="Nombre">
+            </div>
+            <div>
+                <div>Email</div>
+                <input
+                    class="form-label placeholder-secondary leading-snug hover:bg-white focus:outline-none focus:shadow-outline"
+                    type="text" placeholder="Email">
+            </div>
+            <div>
+                <div>Comentarios</div>
+                <textarea
+                    class="form-label placeholder-secondary leading-snug hover:bg-white focus:outline-none focus:shadow-outline"
+                    name="" id="" rows="3"></textarea>
+            </div>
+            <div>
+                <button
+                    class="block mx-auto px-4 py-2 rounded shadow-2xl  bg-gray-300 hover:shadow-none hover:bg-gray-700 hover:text-white">Enviar</button>
+            </div>
+        </div>
+    </main>
+
+
+    <footer
+        class="mt-4 lg:flex-row-reverse md:items-center lg:flex lg:justify-between w-full bg-secondary text-white py-3">
+        <div class="mt-4 md:mb-4 flex justify-center items-center">
+            <div class="mx-2 hover:text-blue-700"><i class="fa fa-facebook"></i> Platzi Food</div>
+            <div class="mx-2 hover:text-blue-500"><i class="fa fa-twitter"></i> @platzifood</div>
+            <div class="mx-2 hover:text-pink-700"><i class="fa fa-instagram"></i> @platzifood</div>
+        </div>
+        <div class="mt-4">
+            <ul class="flex justify-center items-center">
+                <li class="mx-2">About us</li>
+                <li class="mx-2">Support</li>
+                <li class="mx-2">Resgitry</li>
+                <li class="mx-2">Privacy</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

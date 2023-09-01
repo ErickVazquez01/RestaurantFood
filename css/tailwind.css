@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    @variants hover{
+        .zoom {
+            transform: scale(2);
+            transform: rotate(45deg);
+            transition: transform 0.5s ease;
+        }
+        .form-label{
+            @apply w-full py-1 px-4 rounded border border-yellow-300 bg-gray-300 text-gray-800  ;
+        }
+    }
+    
+}
+
